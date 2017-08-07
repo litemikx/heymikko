@@ -14,5 +14,4 @@ function setActive(val) {
     document.getElementById('id_contact').classList.toggle("w3-text-teal");
   }
 
-  console.log(y);
 }
