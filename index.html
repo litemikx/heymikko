@@ -6,15 +6,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 .w3-panel.w3-large.anchor-link-fa {
   font-size: 28px !important;
 }
 
-#profile-pic {
-  border-radius: 25px;
-}
+
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
@@ -24,7 +23,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
-    <img src="assets/profile-pic.jpg" style="width:45%;" class="w3-round" id="profile-pic"><br><br>
+    <img src="assets/profile-pic-2_400x400.jpeg" style="width:80%;" class="w3-round" id="profile-pic"><br><br>
     <h4><b>Charmie Quiño</b></h4>
     <p class="w3-text-grey">A.K.A. Mikko</p>
   </div>
@@ -53,17 +52,43 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
     <h1><b>My Portfolio</b></h1>
+
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white"><i class="fa fa-rocket" aria-hidden="true"></i> WEB</button>
-      <button class="w3-button w3-white"><i class="fa fa-medkit" aria-hidden="true"></i> Health IT</button>
-      <button class="w3-button w3-white"><i class="fa fa-map-pin w3-margin-right"></i>Support</button>
+      <button class="w3-button w3-black" id="all-btn" onclick="showPortfolioSection(this);">ALL</button>
+      <button class="w3-button w3-white" id="health-it-btn" onclick="showPortfolioSection(this);"><i class="fa fa-medkit" aria-hidden="true"></i> Health IT</button>
+      <button class="w3-button w3-white" id="web-btn" onclick="showPortfolioSection(this);"><i class="fa fa-rocket" aria-hidden="true"></i> WEB</button>
+      <button class="w3-button w3-white" id="support-btn" onclick="showPortfolioSection(this);"><i class="fa fa-cogs" aria-hidden="true"></i> Others</button>
     </div>
     </div>
   </header>
 
-  <div id="web-section">
+
+  <div id="health-it-section" class="">
+    <h2>Health IT</h2>
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="https://www.mirth.com" target="_blank"><img src="assets/thumbs/MirthConnect.png" alt="Mirth Connect logo" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>Mirth Connect Integrations</b></p>
+          <p>Mirth is an open source cross-platform HL7 interface engine that enables bi-directional sending of HL7 messages between systems and applications over multiple transports. I've been creating custom integrations between EMRs and LIS using Mirth Connect. Complexity of integrations involves from RESTful APIs, HTTP, TCP/IP, file import and export like CSV to HL7 messages, and others. This is one of my favorite applications to connect health systems.</p>
+        </div>
+      </div>
+
+
+      <div class="w3-third w3-container w3-margin-bottom">
+        <a href="http://lifedata.ph" target="_blank"><img src="assets/thumbs/lifedata_systems_logo.jpg" alt="LiFEDATA Systems Inc logo" style="width:100%" class="w3-hover-opacity"></a>
+        <div class="w3-container w3-white">
+          <p><b>Systems and Technical Support EMR</b></p>
+          <p>Worked at LiFEDATA Systems Inc., a local software company, as a Systems and Technical Support in one of their client's EMR. Work involves daily troubleshooting, debugging, reporting of errors, analysis and understaing of the workflow of the clinic and how to implement it on current EMR. Writing short scripts to resolve issues.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="web-section" class="">
+  <h2>Web Development</h2>
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
@@ -133,6 +158,28 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 </div>
 
+
+
+<div id="support-section" class="">
+  <h2>Support, Software Testing and Systems Analysis</h2>
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://www.jotform.com" target="_blank"><img src="assets/thumbs/podo_9.png" alt="JotForm Logo" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>JotForm Technical Support</b></p>
+        <p>Problem Solver, Tech Support and Script Kiddie in JotForm. JotForm is an online form builder that allows you to create online forms. The form builder is continuously evolving but allows users to highly customize their forms. My work here is a tech support in our forum page helping users with their form creation, creating customize CSS code and scripts to accomplish what their needs. I also create highly detailed guides to walk through users on how to use a feature of the form builder and some customize solutions them. Some of the custom scripts can be found in my Github page <a href="https://github.com/LightDev777/JotForm-Scripts" target="_blank">here</a>.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <a href="https://www.upwork.com" target="_blank"><img src="assets/thumbs/upwork-logo-1200.png" alt="Upwork Logo" style="width:100%" class="w3-hover-opacity"></a>
+      <div class="w3-container w3-white">
+        <p><b>Upwork Freelancer</b></p>
+        <p>Most of my work are in Upwork.com (formerly oDesk.com), I've been doing work here for almost 6 years now. I started fromo personal assistant, chat support, web analyst, tech support, web research for health IT topics like tele-oncology and tele-medicine, and now a clinical laboratory applications analyst. This is a great platform to connect clients and contractors, I'm continuously trying to learn things with focus on web development and health IT. Feel free to check my <a href="https://www.upwork.com/o/profiles/users/_~01274749b75bc97a54/" target="_blank">Upwork page</a> to see my work history.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Images of Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
     <div class="w3-col m6">
@@ -149,8 +196,14 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <p>I love Javascript and that's the language I'm most comfortable with, I can use it not only in web but also in Mirth (which is a popular open-source HL7 interface engine). I love solving problems and connecting things.</p>
     <p>My goal is to create a product that would give an impact on the health IT industry, making health care delivery better using technology.</p>
     <hr>
+    <h3>Skills</h3>
+    <a href="http://www.w3.org/html/logo/">
+      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+    </a>
 
-
+    <a href="https://mirth.com">
+      <img src="assets/thumbs/mirth-logo-social.jpg" alt="Mirth Connect">
+    </a>
     <hr>
 
   </div>
@@ -169,7 +222,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       </div>
       <div class="w3-third w3-teal w3-border">
         <a href="https://www.upwork.com/o/profiles/users/_~01274749b75bc97a54/" target="_blank"><p><i class="fa fa-briefcase w3-xxlarge w3-text-light-grey"></i></p>
-        <p>Hire Me on UpWork</p></a>
+        <p>Hire Me on Upwork</p></a>
       </div>
     </div>
     <hr class="w3-opacity">
@@ -202,13 +255,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
     <div class="w3-third">
       <h3>POPULAR TAGS</h3>
-      <p>
-        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
-        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
-      </p>
+
     </div>
 
   </div>

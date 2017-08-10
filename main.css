@@ -1,0 +1,7 @@
+.hide-block {
+  display: none;
+}
+
+#profile-pic {
+  border-radius: 50%;
+}
