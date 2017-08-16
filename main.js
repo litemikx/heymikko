@@ -17,10 +17,10 @@ function showPortfolioSection(val) {
   var idStr = val.id;
   for(var i = 0; i < arrayBtns.length; i++) {
     if(val.id == arrayBtns[i]) {
-      document.getElementById(arrayBtns[i]).classList.add('w3-black');
+      document.getElementById(arrayBtns[i]).classList.add('w3-teal');
       document.getElementById(arrayBtns[i]).classList.remove('w3-white');
     } else {
-      document.getElementById(arrayBtns[i]).classList.remove('w3-black');
+      document.getElementById(arrayBtns[i]).classList.remove('w3-teal');
       document.getElementById(arrayBtns[i]).classList.add('w3-white');
     }
 

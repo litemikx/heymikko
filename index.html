@@ -25,7 +25,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     </a>
     <img src="assets/profile-pic-2_400x400.jpeg" style="width:80%;" class="w3-round" id="profile-pic"><br><br>
     <h4><b>Charmie Quiño</b></h4>
-    <p class="w3-text-grey">A.K.A. Mikko</p>
+    <p class="w3-text-grey">&lt;Mikko/&gt;</p>
   </div>
   <div class="w3-bar-block">
     <a href="#portfolio" id="id_portfolio" onclick="w3_close(); setActive(this)" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-briefcase fa-fw w3-margin-right"></i>PORTFOLIO</a>
@@ -48,14 +48,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
   <!-- Header -->
   <header id="portfolio">
+    <div class="w3-container w3-teal">
+      <h1><b>My Portfolio</b></h1>
+    </div>
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
 
     <div class="w3-section w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span>
-      <button class="w3-button w3-black" id="all-btn" onclick="showPortfolioSection(this);">ALL</button>
+      <button class="w3-button w3-teal" id="all-btn" onclick="showPortfolioSection(this);">ALL</button>
       <button class="w3-button w3-white" id="health-it-btn" onclick="showPortfolioSection(this);"><i class="fa fa-medkit" aria-hidden="true"></i> Health IT</button>
       <button class="w3-button w3-white" id="web-btn" onclick="showPortfolioSection(this);"><i class="fa fa-rocket" aria-hidden="true"></i> WEB</button>
       <button class="w3-button w3-white" id="support-btn" onclick="showPortfolioSection(this);"><i class="fa fa-cogs" aria-hidden="true"></i> Others</button>
@@ -65,7 +67,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
   <div id="health-it-section" class="">
-    <h2>Health IT</h2>
+    <h2>&lt;Health IT/&gt;</h2>
     <div class="w3-row-padding">
       <div class="w3-third w3-container w3-margin-bottom">
         <a href="https://www.mirth.com" target="_blank"><img src="assets/thumbs/MirthConnect.png" alt="Mirth Connect logo" style="width:100%" class="w3-hover-opacity"></a>
@@ -80,7 +82,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         <a href="http://lifedata.ph" target="_blank"><img src="assets/thumbs/lifedata_systems_logo.jpg" alt="LiFEDATA Systems Inc logo" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container w3-white">
           <p><b>Systems and Technical Support EMR</b></p>
-          <p>Worked at LiFEDATA Systems Inc., a local software company, as a Systems and Technical Support in one of their client's EMR. Work involves daily troubleshooting, debugging, reporting of errors, analysis and understaing of the workflow of the clinic and how to implement it on current EMR. Writing short scripts to resolve issues.</p>
+          <p>Worked at LiFEDATA Systems Inc., a local software company, as a Systems and Technical Support Staff in one of their client's EMR. Work involves daily troubleshooting, debugging, reporting of errors, analysis and understaing of the workflow of the clinic and how to implement it on current EMR. Writing short scripts to resolve issues.</p>
         </div>
       </div>
     </div>
@@ -161,7 +163,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
 <div id="support-section" class="">
-  <h2>Support, Software Testing and Systems Analysis</h2>
+
+    <h2>Support, Software Testing and Systems Analysis</h2>
+
   <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="https://www.jotform.com" target="_blank"><img src="assets/thumbs/podo_9.png" alt="JotForm Logo" style="width:100%" class="w3-hover-opacity"></a>
@@ -180,88 +184,75 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 </div>
 
-  <!-- Images of Me -->
+  <!-- About Me -->
   <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+    <div class="w3-container w3-teal">
+      <h1><b>About Me</b></h1>
     </div>
   </div>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Hey there! I'm Charmie Quiño, I graduated Bachelors in Nursing and found myself aiming to be a Health IT professional. Currently, my skill set is ranges from technical support, systems analyst, Mirth integration, software testing and web development. I'm currently taking the FreeCodeCamp course and hopefully to finish the Full Stack course.</p>
+  <div class="w3-container" style="margin-bottom:32px">
+
+    <p>Hey there! I'm Charmie Quiño, I graduated Bachelor of Science in Nursing and found myself aiming to be a Health IT professional. Currently, my skill set is ranges from technical support, systems analyst, Mirth integration, software testing and web development. I'm currently taking the FreeCodeCamp course and hopefully to finish the Full Stack course.</p>
     <p>I love Javascript and that's the language I'm most comfortable with, I can use it not only in web but also in Mirth (which is a popular open-source HL7 interface engine). I love solving problems and connecting things.</p>
     <p>My goal is to create a product that would give an impact on the health IT industry, making health care delivery better using technology.</p>
-    <hr>
-    <h3>Skills</h3>
-    <a href="http://www.w3.org/html/logo/">
-      <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
-    </a>
+    <h2>Skills &amp; Tools</h2>
+    <div class="w3-row-padding">
+      <div class="w3-col m4">
+        <img src="assets/thumbs/group-logos-dev.png" width="250" alt="HTML CSS JS Bootstrap" title="HTML CSS JS Bootstrap">
+      </div>
+      <div class="w3-col m4">
+      <a href="https://mirth.com" target="_blank">
+        <img src="assets/thumbs/mirth.png" width="250" alt="Mirth Connect" title="Mirth Connect">
+      </a>
+      </div>
 
-    <a href="https://mirth.com">
-      <img src="assets/thumbs/mirth-logo-social.jpg" alt="Mirth Connect">
-    </a>
+      <div class="w3-col m4">
+        <img src="assets/thumbs/php-mysql-logo.png" width="200" alt="PHP MySQL" title="PHP MySQL">
+      </div>
+
+
+    </div>
+    <div class="w3-row-padding">
+      <div class="w3-col m4">
+      <a href="http://www.seleniumhq.org/projects/ide/" target="_blank">
+        <img src="assets/thumbs/selenium-logo.png" width="200" alt="Selenium IDE" title="Selenium IDE">
+      </a>
+      </div>
+      <div class="w3-col m4">
+      <a href="https://www.postgresql.org/" target="_blank">
+        <img src="assets/thumbs/postgresql-logo.png" width="300" alt="PostgreSQL Database" title="PostgreSQL Database">
+      </a>
+      </div>
+    </div>
+
     <hr>
 
   </div>
 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>Contact Me</b></h4>
+  <div class="w3-row-padding">
+    <div class="w3-container w3-teal">
+      <h1 id="contact"><b>Contact Me</b></h1>
+    </div>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-teal w3-border">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>charmiequino@gmail.com</p>
+      <div class="w3-third w3-white w3-border">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-black"></i></p>
+        <p><a href="mailto:charmiequino@gmail.com">charmiequino@gmail.com</a></p>
       </div>
-      <div class="w3-third w3-teal w3-border">
-        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+      <div class="w3-third w3-white w3-border">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-black"></i></p>
         <p>Angeles City, PH</p>
       </div>
-      <div class="w3-third w3-teal w3-border">
-        <a href="https://www.upwork.com/o/profiles/users/_~01274749b75bc97a54/" target="_blank"><p><i class="fa fa-briefcase w3-xxlarge w3-text-light-grey"></i></p>
+      <div class="w3-third w3-white w3-border">
+        <a href="https://www.upwork.com/o/profiles/users/_~01274749b75bc97a54/" target="_blank"><p><i class="fa fa-briefcase w3-xxlarge w3-text-black"></i></p>
         <p>Hire Me on Upwork</p></a>
       </div>
     </div>
     <hr class="w3-opacity">
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-32 w3-dark-grey">
-  <div class="w3-row-padding">
-    <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-
-    <div class="w3-third">
-      <h3>BLOG POSTS</h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
-        </li>
-        <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
-        </li>
-      </ul>
-    </div>
-
-    <div class="w3-third">
-      <h3>POPULAR TAGS</h3>
-
-    </div>
-
-  </div>
-  </footer>
-
-  <div class="w3-black w3-center w3-padding-24"><i class="fa fa-copyright" aria-hidden="true"></i> Charmie Q. <i class="fa fa-times" aria-hidden="true"></i> Template by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Charmie Q. <i class="fa fa-times" aria-hidden="true"></i> Template by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 <!-- End page content -->
 </div>
