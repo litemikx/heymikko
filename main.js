@@ -2,11 +2,14 @@
 //Set which of the nav button will be set to active
 function setActive(val) {
   var navBtns = ['id_portfolio', 'id_about', 'id_contact'];
+  var navDivs = ['portfolio', 'about', 'contact'];
   for(var i = 0; i < navBtns.length; i++) {
     if(val.id == navBtns[i]) {
         document.getElementById(navBtns[i]).classList.add("w3-text-teal");
+
     } else {
         document.getElementById(navBtns[i]).classList.remove("w3-text-teal");
+
     }
   }
 }
@@ -29,12 +32,15 @@ function showPortfolioSection(val) {
     if(val.id == arrayBtns[0]) {
       if(i < 3) {
         document.getElementById(arraySections[i+1]).classList.remove('hide-block');
+        document.getElementById(arraySections[i+1]).classList.add('fadeIn');
       }
     } else {
       if(val.id == arrayBtns[i] && i != 0) {
         document.getElementById(arraySections[i]).classList.remove('hide-block');
+        document.getElementById(arraySections[i]).classList.add('fadeIn');
       } else if(val.id != arrayBtns[i] && i != 0) {
         document.getElementById(arraySections[i]).classList.add('hide-block');
+        document.getElementById(arraySections[i]).classList.remove('fadeIn');
       }
     }
   }
