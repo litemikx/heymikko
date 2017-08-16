@@ -4,4 +4,7 @@
 
 #profile-pic {
   border-radius: 50%;
+  width: 80%;
+  border: 1px solid black;
+  padding: 3px;
 }

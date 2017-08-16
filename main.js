@@ -1,4 +1,5 @@
 
+//Set which of the nav button will be set to active
 function setActive(val) {
   var navBtns = ['id_portfolio', 'id_about', 'id_contact'];
   for(var i = 0; i < navBtns.length; i++) {
@@ -10,8 +11,9 @@ function setActive(val) {
   }
 }
 
+// Set which of the filter button is active
 function showPortfolioSection(val) {
-  console.log(val);
+  //console.log(val);
   var arrayBtns = ["all-btn", "web-btn", "health-it-btn", "support-btn"];
   var arraySections = ["", "web-section", "health-it-section", "support-section"];
   var idStr = val.id;
